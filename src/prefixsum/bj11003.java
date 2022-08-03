@@ -23,7 +23,7 @@ public class bj11003 {
                 deque.removeLast();
             }
             deque.addLast(new Node(now, i));
-            if (deque.getFirst().index <= i - L) {
+            if (deque.getFirst().index < i+1 -L) {
                 deque.removeFirst();
             }
             bw.write(deque.getFirst().value + " ");
