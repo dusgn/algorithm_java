@@ -8,7 +8,6 @@ public class bj2164 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int N = sc.nextInt();
-        int result = 0;
         Queue<Integer> queue = new LinkedList<>();
         for (int i = 1; i <= N; i++) {
             queue.add(i);
@@ -16,10 +15,8 @@ public class bj2164 {
 
         while (queue.size() > 1) {
             queue.poll();
-            result = queue.poll();
-            queue.add(result);
+            queue.add(queue.poll());
         }
-
-        System.out.println(result);
+        System.out.println(queue.poll());
     }
 }
