@@ -63,3 +63,12 @@ static void sort(Object[] a) // 객체 배열에 저장된 객체가 구현한 C
 static void sort(Object[] a, Comparator c) // 지정한 Comparator 에 의한 정렬
 ```
  - Java의 정석, 남궁성
+
+***
+
+## 정렬
+
+### 버블정렬
+ - 두 인접한 데이터의 크기를 비교해 정렬
+ - O(n^2)
+ - 지정된 범위의 loop를 돌며 인접한 데이터 간의 swap 연산으로 정렬
