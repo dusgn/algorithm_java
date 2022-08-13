@@ -89,3 +89,5 @@ static void sort(Object[] a, Comparator c) // 지정한 Comparator 에 의한 �
 
 ### 병합정렬
  - 하나의 리스트를 절반 으로 나누어 분할 정복
+ - O(nlogn)
+
