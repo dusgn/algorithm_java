@@ -67,6 +67,7 @@ static void sort(Object[] a, Comparator c) // 지정한 Comparator 에 의한 �
 ***
 
 ## 정렬
+ - 데이터를 순서대로 나열하는 방법
 
 ### 버블정렬
  - 두 인접한 데이터의 크기를 비교해 정렬
