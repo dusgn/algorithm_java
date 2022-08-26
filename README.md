@@ -116,7 +116,7 @@ static void sort(Object[] a, Comparator c) // 지정한 Comparator 에 의한 �
  **DFS 초기작업**
  1. 인접 리스트로 그래프 표현
  2. 방문 배열 초기화
- 3. 시작 노드 스택에 삽입하기ㅇ
+ 3. 시작 노드 스택에 삽입하기
 
 
 ## 그래프
