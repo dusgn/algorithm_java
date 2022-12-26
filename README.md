@@ -74,6 +74,20 @@ static void sort(Object[] a, Comparator c) // 지정한 Comparator 에 의한 �
 
 ***
 
+#### java 의 hashmap value 정렬
+```java
+Map<String, Integer> map = new Hashmap<String, Integer>();
+        ArrayList<Map.Entry<String, Integer>> entries = new ArrayList<>(map.entrySet());
+        Collections.sort(entries, new Comparator<Map.Entry<String, Integer>>() {
+        @Override
+        public int compare(Map.Entry<String, Integer> o1, Map.Entry<String, Integer> o2) {
+                return o2.getValue().compareTo(o1.getValue());
+                }
+        });
+```
+Map의 key 비교 map.keySet() : key 를 리스트로 반환
+Map의 value 비교 map.entrySet() : key, value
+
 ## 정렬
  - 데이터를 순서대로 나열하는 방법
 
